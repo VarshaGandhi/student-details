@@ -2,12 +2,18 @@ using System;
 
 namespace Student_details
 {
-
+public class Course
+{
+    public int courseId{get;set}
+    public string Name{get;set}
+}
     public class Student
     {
+        
         public int StudentId { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
+        public int courseId{get;set;}
         public override string ToString()
         {
             return StudentId + " " + Name + " " + Address;
